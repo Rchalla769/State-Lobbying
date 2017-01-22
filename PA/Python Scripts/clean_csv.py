@@ -47,7 +47,7 @@ if __name__ == "__main__":
 					else:
 						data[year][client] = {"amount": amount, "lobbyists": [lobbyist]}
 				else:
-					data[year] = {}
+					data[year] = {client: {'lobbyists':[lobbyist], 'amount': amount}}
 
 	for (year, clients) in data.items():
 		rows = []
